@@ -7,9 +7,9 @@ import Orders from "./Orders";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/Restaurant-App">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Restaurant-App" element={<Home />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
