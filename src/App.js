@@ -7,9 +7,9 @@ import Orders from "./Orders";
 function App() {
   return (
     <div>
-      <HashRouter basename="/Restaurant-App">
+      <HashRouter>
         <Routes>
-          <Route path="/Restaurant-App" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
